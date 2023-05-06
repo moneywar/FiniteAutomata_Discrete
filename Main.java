@@ -6,6 +6,7 @@ class Main{
         Scanner sn = new Scanner(System.in);
         String input = sn.nextLine();
         System.out.println(Autoomata.isFinite(input));
+        System.out.println();
         sn.close();
     }
 }
