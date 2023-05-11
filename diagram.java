@@ -7,10 +7,14 @@ public class diagram {
         state s0 = new state("s0");
         state s1 = new state("s1");
         state s2 = new state("s2");
+        state s3 = new state("s3");
+        state s4 = new state("s4");
 
-        s0.setGo(s1, s0);
-        s1.setGo(s1, s2);
-        s2.setGo(s1, s0);
+        s0.setGo(s0, s1);
+        s1.setGo(s2, s4);
+        s2.setGo(s3, s4);
+        s3.setGo(s2, s1);
+        s4.setGo(s3, s1);
 
         start = s0;
         finite = s2;
