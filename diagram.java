@@ -3,12 +3,13 @@ public class diagram {
     private state curState;
     private state finite;
 
+    state s0 = new state("s0");
+    state s1 = new state("s1");
+    state s2 = new state("s2");
+    state s3 = new state("s3");
+    state s4 = new state("s4");
+    
     public diagram(){
-        state s0 = new state("s0");
-        state s1 = new state("s1");
-        state s2 = new state("s2");
-        state s3 = new state("s3");
-        state s4 = new state("s4");
 
         s0.setGo(s0, s1);
         s1.setGo(s2, s4);
